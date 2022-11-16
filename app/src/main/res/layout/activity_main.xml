@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LonginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textSize="50dp"
+        android:textColor="@color/purple_500"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:id="@+id/ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디: "
+        android:textSize="20dp"
+        android:textColor="@color/purple_500"
+        android:layout_below="@+id/LonginText"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        />
+
+    <EditText
+        android:id="@+id/IDText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_toRightOf="@+id/ID"
+        android:layout_below="@+id/LonginText"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:hint="아이디를 입력하세요"
+        />
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호: "
+        android:textSize="20dp"
+        android:textColor="@color/purple_500"
+        android:layout_below="@+id/ID"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        />
+
+    <EditText
+        android:id="@+id/PasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_toRightOf="@+id/Password"
+        android:layout_below="@+id/IDText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="비밀번호를 입력하세요"
+        />
+
+    <Button
+        android:id="@+id/LongInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="로그인" />
+
+    <Button
+        android:id="@+id/SingInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/ListPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상품 페이지로 가기"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/LongInButton"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

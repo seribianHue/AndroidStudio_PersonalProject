@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/SingInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="40dp"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디: "
+            android:textSize="20dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/IDText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="아이디를 입력하세요"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호: "
+            android:textSize="20dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            tools:ignore="DuplicateIds" />
+
+        <EditText
+            android:id="@+id/PasswordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:hint="비밀번호를 입력하세요"
+            android:layout_marginEnd="20dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 조건: 6~16자리, 숫자, 대소문자 영문, 특수문자(@#$%^&amp;+=)로만 이루어지고, 모두 필수로 한번씩은 포함해야 한다."
+        android:textSize="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름: "
+            android:textSize="20dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/NameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:hint="성함을 입력하세요"
+            android:layout_marginEnd="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TelNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화번호: "
+            android:textSize="20dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/TelNumText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:hint="전화번호를 입력하세요"
+            android:layout_marginEnd="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/EmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일: "
+            android:textSize="20dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/EmailAddressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:hint="이메일 주소를 입력하세요"
+            android:inputType="textEmailAddress"
+            android:layout_marginEnd="20dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ServiceTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저희 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 네이버 서비스를 이용하시거나 네이버 서비스 회원으로 가입하실 경우 여러분은 본 약관 및 관련 운영 정책을 확인하거나 동의하게 되므로, 잠시 시간을 내시어 주의 깊게 살펴봐 주시기 바랍니다. 단체회원 구성원들은 하나의 계정 및 아이디(ID)를 공유하되 각자 개별적으로 설정한 비밀번호를 입력하여 계정에 로그인하고 각종 서비스를 이용하게 됩니다. "
+        android:textSize="10dp"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/AgreeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/Agree"
+        android:layout_marginStart="10dp">
+
+        <RadioButton
+            android:id="@+id/Agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동의"
+            android:textSize="15dp"
+            android:layout_marginEnd="10dp"/>
+
+        <RadioButton
+            android:id="@+id/Disagree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비동의"
+            android:textSize="15dp"
+            android:layout_margin="0dp"/>
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="bottom|end">
+
+        <Button
+            android:id="@+id/SingInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom"
+            android:text="회원가입" />
+
+    </LinearLayout>
+
+</LinearLayout>
